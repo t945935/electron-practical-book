@@ -1,0 +1,17 @@
+name: 配套操作問題
+description: 回報已發布配套的操作問題
+title: "[操作問題] "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: 作業系統與 Node.js、Electron、配套版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步驟、預期結果及實際錯誤
+      description: 先移除密碼、權杖、個資；請提供最小可重現範例，不貼書籍全文。
+    validations:
+      required: true

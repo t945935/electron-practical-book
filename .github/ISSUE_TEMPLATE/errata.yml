@@ -1,0 +1,17 @@
+name: 書籍勘誤
+description: 回報文字或教學說明錯誤
+title: "[勘誤] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 書籍版本與章節位置
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 問題與建議修正
+      description: 請勿貼上整章內容或任何秘密。
+    validations:
+      required: true
