@@ -1,0 +1,1 @@
+module.exports={packagerConfig:{asar:{unpack:'**/tools/search/*.cjs'},executableName:'own-tools-toolbox',ignore:[/^\/test($|\/)/,/^\/ui($|\/)/,/^\/regression($|\/)/,/^\/test-results($|\/)/,/^\/playwright\.config\.cjs$/]},makers:[{name:'@electron-forge/maker-zip',platforms:['win32','linux','darwin']}]};

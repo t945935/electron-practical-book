@@ -1,0 +1,21 @@
+{
+  "name": "own-tools-ch11",
+  "productName": "Own Tools ch11",
+  "version": "1.0.0",
+  "private": true,
+  "description": "自己的工具，自己做：獨立章節配套",
+  "author": "Electron Practical Book",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "test": "node --test test/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "@electron-forge/cli": "8.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "own-tools-ch01",
+  "productName": "Own Tools Chapter 1",
+  "version": "0.1.0",
+  "description": "自己的工具，自己做：章節配套",
+  "private": true,
+  "main": "src/main.cjs",
+  "author": "Electron Practical Book",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "node --test test/*.test.cjs",
+    "test:ui": "playwright test",
+    "package": "electron-forge package"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "@electron-forge/cli": "8.0.1",
+    "@playwright/test": "1.63.0"
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>自己的工具，自己做</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>自己的工具，自己做</h1>
+    <p>替系統資訊取一個名稱，再交給主程序處理。</p>
+    <p>應用程式版本：<strong id="version">0.1.0</strong></p>
+    <p>關閉視窗即可結束；macOS 請使用應用程式選單結束。</p>
+    <label for="label">顯示名稱（1 至 20 字）</label>
+    <input id="label" value="我的工具" maxlength="20" autocomplete="off">
+    <button id="query" type="button">查詢應用資訊</button>
+    <p id="message" role="status" aria-live="polite">尚未查詢</p>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>

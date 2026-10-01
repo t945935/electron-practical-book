@@ -1,0 +1,12 @@
+--- starter/core.cjs
++++ complete/core.cjs
+@@ -13,4 +13,8 @@
+ function exportCSV(rows){validateRows(rows);const text='\uFEFFdate,category,note,amount\r\n'+rows.map(r=>[r.date,r.category,r.note,formatMoney(r.cents)].map(csvCell).join(',')+'\r\n').join('');
+  // Require the protected text to fit the unchanged import contract. Never strip the prefix.
+  try{importCSV(text);}catch{throw Error('CSV_LIMIT');}return text;}
+-module.exports={parseMoney,formatMoney,validateRows,summarize,parseCSV,importCSV,exportCSV,csvCell};
++function exportMonth(rows,month){
++ if(typeof month!=='string'||!/^\d{4}-(0[1-9]|1[0-2])$/.test(month))throw Error('INVALID');
++ const clean=validateRows(rows);return exportCSV(clean.filter(r=>r.date.startsWith(month+'-')));
++}
++module.exports={exportMonth,parseMoney,formatMoney,validateRows,summarize,parseCSV,importCSV,exportCSV,csvCell};

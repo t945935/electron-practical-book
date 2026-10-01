@@ -1,0 +1,23 @@
+--- starter/src/weather.cjs
++++ complete/src/weather.cjs
+@@ -1,4 +1,4 @@
+-const CITIES=Object.freeze({taipei:{name:'臺北',latitude:25.033,longitude:121.5654},kaohsiung:{name:'高雄',latitude:22.6273,longitude:120.3014}});
++const CITIES=Object.freeze({taichung:{name:'臺中',latitude:24.1477,longitude:120.6736},taipei:{name:'臺北',latitude:25.033,longitude:121.5654},kaohsiung:{name:'高雄',latitude:22.6273,longitude:120.3014}});
+ function fault(code,message){return Object.assign(new Error(message),{code});}
+ async function getWeather(city,{fetchImpl=fetch,timeoutMs=8000}={}){
+  if(typeof city!=='string'||!Object.hasOwn(CITIES,city)) throw fault('VALIDATION','請選擇清單中的城市');
+--- starter/src/store.cjs
++++ complete/src/store.cjs
+@@ -1,5 +1,5 @@
+ const fs=require('node:fs/promises');const path=require('node:path');const {randomUUID}=require('node:crypto');
+-function valid(d){return d&&['taipei','kaohsiung'].includes(d.cityId)&&typeof d.city==='string'&&d.city.length<30&&Number.isFinite(d.temperature)&&Number.isInteger(d.code)&&require('./time.cjs').observedTime(d.observedAt)&&require('./time.cjs').fetchedTime(d.fetchedAt)&&d.source==='Open-Meteo'&&d.timezone==='Asia/Taipei';}
++function valid(d){return d&&['taipei','kaohsiung','taichung'].includes(d.cityId)&&typeof d.city==='string'&&d.city.length<30&&Number.isFinite(d.temperature)&&Number.isInteger(d.code)&&require('./time.cjs').observedTime(d.observedAt)&&require('./time.cjs').fetchedTime(d.fetchedAt)&&d.source==='Open-Meteo'&&d.timezone==='Asia/Taipei';}
+ class Cache{
+  constructor(dir){this.dir=dir;this.file=path.join(dir,'cache.json');}
+  async load(){try{const stat=await fs.lstat(this.file);if(!stat.isFile()||stat.size>4096)throw new Error();const data=JSON.parse(await fs.readFile(this.file,'utf8'));if(data.schemaVersion!==1||!valid(data.weather))throw new Error();return data.weather;}catch(error){if(error.code==='ENOENT')return null;throw Object.assign(new Error('快取無法讀取，原檔保留'),{code:'CACHE'});}}
+--- starter/src/index.html
++++ complete/src/index.html
+@@ -1,2 +1,2 @@
+ <!doctype html>
+-<html lang="zh-Hant"><head><meta charset="UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="style.css"><title>天氣資訊面板</title></head><body><h1>天氣資訊面板</h1><label>城市 <select id="city"><option value="taipei">臺北</option><option value="kaohsiung">高雄</option></select></label><button id="query">查詢</button><p id="status" role="status">選擇城市後查詢。</p><pre id="weather">尚無資料</pre><small>氣象資料：Open-Meteo（https://open-meteo.com/），CC BY 4.0。顯示模式推估值，不作災害決策依據。</small><script src="renderer.js"></script></body></html>
++<html lang="zh-Hant"><head><meta charset="UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="style.css"><title>天氣資訊面板</title></head><body><h1>天氣資訊面板</h1><label>城市 <select id="city"><option value="taipei">臺北</option><option value="kaohsiung">高雄</option><option value="taichung">臺中</option></select></label><button id="query">查詢</button><p id="status" role="status">選擇城市後查詢。</p><pre id="weather">尚無資料</pre><small>氣象資料：Open-Meteo（https://open-meteo.com/），CC BY 4.0。顯示模式推估值，不作災害決策依據。</small><script src="renderer.js"></script></body></html>

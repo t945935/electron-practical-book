@@ -1,0 +1,52 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const { pathToFileURL } = require('node:url');
+const file = require('node:path').join(__dirname, '../../../tools/timer/timer.mjs');
+const load = async () => fs.existsSync(file) ? import(pathToFileURL(file)) : {};
+test('截止時間而不是 tick 次數：背景未更新仍扣除經過時間', async () => {
+  const { createTimer } = await load();
+  assert.equal(typeof createTimer, 'function');
+  let now = 1000;
+  const timer = createTimer(60000, () => now);
+  assert.deepEqual(timer.read(), {state:'idle',remainingMs:60000});
+  timer.start();
+  now += 17000;
+  assert.deepEqual(timer.read(), {state:'running',remainingMs:43000});
+  now += 60000;
+  assert.deepEqual(timer.read(), {state:'finished',remainingMs:0});
+});
+test('重複開始不延長時間；暫停後不走，繼續沿用餘額', async () => {
+  const {createTimer} = await load();
+  let now = 0;
+  const timer = createTimer(10000, () => now);
+  timer.start(); now = 3000; timer.start(); now = 4000;
+  assert.equal(timer.read().remainingMs, 6000);
+  timer.pause(); now = 100000;
+  assert.deepEqual(timer.read(), {state:'paused',remainingMs:6000});
+  timer.start(); now += 1000;
+  assert.deepEqual(timer.read(), {state:'running',remainingMs:5000});
+  timer.reset();
+  assert.deepEqual(timer.read(), {state:'idle',remainingMs:10000});
+});
+test('拒絕錯誤長度，重設可改長度，完成不自動重跑', async () => {
+  const {createTimer} = await load();
+  for (const value of [0,-1,NaN,Infinity,1.5,3600001,'1000']) assert.throws(() => createTimer(value), RangeError);
+  let now=0; const timer=createTimer(1000,()=>now);
+  timer.pause(); assert.equal(timer.read().state,'idle');
+  timer.start(); now=1000; timer.pause();
+  assert.equal(timer.read().state,'finished');
+  timer.start(); assert.equal(timer.read().state,'finished');
+  timer.reset(2000); assert.equal(timer.read().remainingMs,2000);
+  assert.throws(()=>timer.reset(-1),RangeError);
+  assert.equal(timer.read().remainingMs,2000);
+});
+test('時鐘倒退不增加餘額；顯示秒數向上取整', async () => {
+  const {createTimer,formatTime} = await load();
+  let now=5000; const timer=createTimer(10000,()=>now);
+  timer.start(); now=7000; assert.equal(timer.read().remainingMs,8000);
+  now=6000; assert.equal(timer.read().remainingMs,8000);
+  assert.equal(formatTime(60001),'01:01');
+  assert.equal(formatTime(1),'00:01');
+  assert.equal(formatTime(0),'00:00');
+});

@@ -1,0 +1,22 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const { handleInfo } = require('../src/info-service.cjs');
+function fixture() {
+  const frame = { url: 'app://local/index.html' };
+  const contents = { mainFrame: frame };
+  return { event: { sender: contents, senderFrame: frame },
+    context: { contents, entry: frame.url,
+      info: () => ({ version: '0.1.0', platform: 'win32' }) } };
+}
+test('成功回覆移除前後空格', () => {
+  const { event, context } = fixture(); // Arrange：合法來源及固定資料
+  const result = handleInfo(event, { label: ' 工具 ' }, context); // Act
+  assert.equal(result.data.label, '工具'); // Assert
+});
+test('拒絕先於讀取，合法請求只讀一次', () => {
+  const { event, context } = fixture();
+  let calls = 0;
+  context.info = () => { calls += 1; return { version: '0.1.0', platform: 'win32' }; };
+  // TODO：依本章表格送非法、異來源、合法請求；每一步斷言回覆與 calls。
+  assert.fail('尚未完成自己的呼叫次數驗收');
+});

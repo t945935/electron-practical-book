@@ -1,0 +1,13 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+test('拒絕的長度不可污染下一次無參數重設', async () => {
+  const { createTimer } = await import('../src/timer.mjs');
+  let now = 0;
+  const timer = createTimer(10000, () => now);
+  timer.reset(20000);
+  timer.start();
+  now = 4000;
+  // TODO：讀取 running/16000；拒絕 reset(-1)；reset() 應 idle/20000。
+  // 再開始、推進 3000 毫秒、暫停；拒絕 reset(0)；reset() 仍 idle/20000。
+  assert.fail('尚未完成自己的預設長度驗收');
+});

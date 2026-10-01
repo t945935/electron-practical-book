@@ -1,0 +1,10 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs'); const os=require('node:os'); const path=require('node:path');
+const file=path.join(__dirname,'../../../tools/todo/core.cjs'); const api=fs.existsSync(file)?require(file):{};
+test('first usable chapter behavior',t=>{ assert.equal(typeof api.createTodoStore,'function'); const dir=fs.mkdtempSync(path.join(os.tmpdir(),'todo-')); t.after(()=>fs.rmSync(dir,{recursive:true,force:true})); const s=api.createTodoStore(dir); s.save([{id:'a',text:'買牛奶',done:false}]); assert.equal(api.createTodoStore(dir).load().items[0].text,'買牛奶'); });
+
+test('corrupt data retained and explicit recovery required',t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'todo-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));fs.writeFileSync(path.join(dir,'todos.json'),'{broken');const s=api.createTodoStore(dir); assert.equal(s.load().recoveryRequired,true);assert.throws(()=>s.save([]),/RECOVERY/);s.recover();assert.deepEqual(s.load().items,[]);assert.ok(fs.readdirSync(dir).some(x=>x.startsWith('todos.json.corrupt-')));});
+test('reject invalid and duplicate todos',t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'todo-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));const s=api.createTodoStore(dir);assert.throws(()=>s.save([{id:'x',text:'',done:'yes'}]));assert.throws(()=>s.save([{id:'x',text:'a',done:false},{id:'x',text:'b',done:false}]));});
+
+test('atomic rename failure preserves previous file and cleans temp',t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'todo-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));const s=api.createTodoStore(dir);s.save([{id:'a',text:'old',done:false}]);const rename=fs.renameSync;try{fs.renameSync=()=>{throw Object.assign(Error('busy'),{code:'EPERM'});};assert.throws(()=>s.save([{id:'a',text:'new',done:false}]));}finally{fs.renameSync=rename;}assert.equal(s.load().items[0].text,'old');assert.equal(fs.readdirSync(dir).some(x=>x.includes('.tmp-')),false);});

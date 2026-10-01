@@ -1,0 +1,22 @@
+{
+  "name": "own-tools-ch08",
+  "version": "1.0.0",
+  "description": "自己的工具，自己做 第8章",
+  "author": "Book companion",
+  "private": true,
+  "main": "main.cjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "node --test",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "@electron-forge/cli": "8.0.1",
+    "@electron-forge/maker-zip": "8.0.1"
+  }
+}

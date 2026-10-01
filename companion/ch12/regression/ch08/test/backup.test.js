@@ -1,0 +1,2 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const {spawnSync}=require('node:child_process');const path=require('node:path');
+test('raw JSON backup restores exact bytes and every field after CSV replacement',()=>{const r=spawnSync(process.execPath,[path.join(__dirname,'../backup-walkthrough.cjs')],{encoding:'utf8',timeout:10000});assert.equal(r.status,0,r.stderr);const result=JSON.parse(r.stdout);assert.equal(result.restoredBytes,true);assert.equal(result.restoredEveryField,true);});

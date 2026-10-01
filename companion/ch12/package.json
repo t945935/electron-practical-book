@@ -1,0 +1,26 @@
+{
+  "name": "own-tools-toolbox",
+  "version": "1.0.0",
+  "description": "八工具整合配套",
+  "author": "Book companion",
+  "private": true,
+  "main": "main.cjs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "node --test test/*.test.cjs regression/*/test/*.test.*",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test:ui": "node node_modules/@playwright/test/cli.js test",
+    "make:win": "electron-forge make --platform=win32 --arch=x64"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "@electron-forge/cli": "8.0.1",
+    "@electron-forge/maker-zip": "8.0.1",
+    "@playwright/test": "1.63.0"
+  },
+  "productName": "Own Tools Toolbox"
+}

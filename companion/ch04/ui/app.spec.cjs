@@ -1,0 +1,32 @@
+const { test, expect, _electron: electron } = require('@playwright/test');
+const path = require('node:path');
+let app, page;
+test.beforeEach(async () => {
+  app = await electron.launch({ args: [path.join(__dirname, '..')] });
+  page = await app.firstWindow();
+});
+test.afterEach(async () => { if (app) await app.close(); });
+test('設定、開始、暫停、繼續、完成、重設與非法輸入', async () => {
+  await expect(page.locator('#clock')).toHaveText('25:00');
+  await page.locator('#seconds').fill('3');
+  await page.locator('#reset').click();
+  await expect(page.locator('#clock')).toHaveText('00:03');
+  await page.locator('#start').click();
+  await expect(page.locator('#status')).toHaveText('專注中');
+  await page.locator('#pause').click();
+  await expect(page.locator('#status')).toHaveText('已暫停');
+  const paused = await page.locator('#clock').textContent();
+  await page.waitForTimeout(1100);
+  await expect(page.locator('#clock')).toHaveText(paused);
+  await page.locator('#start').click();
+  await expect(page.locator('#status')).toHaveText('時間到，休息一下！', {timeout:6000});
+  await expect(page.locator('#clock')).toHaveText('00:00');
+  await page.locator('#seconds').fill('0');
+  await page.locator('#reset').click();
+  await expect(page.locator('#message')).toHaveText('請輸入 1 至 3600 的整數秒數。');
+  await expect(page.locator('#status')).toHaveText('時間到，休息一下！');
+  await page.locator('#seconds').fill('60');
+  await page.locator('#reset').click();
+  await expect(page.locator('#clock')).toHaveText('01:00');
+  await expect(page.locator('#status')).toHaveText('準備開始');
+});

@@ -1,0 +1,770 @@
+[
+  {
+    "source": "companion/ch04/src/renderer.js",
+    "target": "tools/timer/renderer.js",
+    "source_sha256": "17ab5082941a90ebd710748c803b61f29a3374986c74720d3000ee764902f065",
+    "target_sha256": "17ab5082941a90ebd710748c803b61f29a3374986c74720d3000ee764902f065",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch04/src/index.html",
+    "target": "tools/timer/index.html",
+    "source_sha256": "3fae16404825e6ef19777f769ecc2d03d3c382c291a765a1555329e226bd34a3",
+    "target_sha256": "912a6dfd3eea77bd860938b662eca13329e488e6a76a325acfd832d3c10d20e8",
+    "modified": true,
+    "adaptation": "視窗關閉說明改為工具箱政策；原版版本標示沿用元件。"
+  },
+  {
+    "source": "companion/ch04/src/style.css",
+    "target": "tools/timer/style.css",
+    "source_sha256": "c18ccbb35180892d9c664137dbf1912e414f7b4ffee876d36eca67f6d93e510c",
+    "target_sha256": "c18ccbb35180892d9c664137dbf1912e414f7b4ffee876d36eca67f6d93e510c",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch04/src/timer.mjs",
+    "target": "tools/timer/timer.mjs",
+    "source_sha256": "842937cb02474b6110712a1a6945c96342d8bf367b87cf02163b3447fe3de6db",
+    "target_sha256": "842937cb02474b6110712a1a6945c96342d8bf367b87cf02163b3447fe3de6db",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/service.cjs",
+    "target": "tools/todo/service.cjs",
+    "source_sha256": "d3495a6413ab84216f26794b403a89e257fc9bb68bb337c67c1be1879f70bea4",
+    "target_sha256": "d3495a6413ab84216f26794b403a89e257fc9bb68bb337c67c1be1879f70bea4",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/styles.css",
+    "target": "tools/todo/styles.css",
+    "source_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "target_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/boundary.cjs",
+    "target": "tools/todo/boundary.cjs",
+    "source_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "target_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/core.cjs",
+    "target": "tools/todo/core.cjs",
+    "source_sha256": "21751af5c6650e9c70dcf894d775ef3c40d8e4008056d05bae97363a51669cc9",
+    "target_sha256": "21751af5c6650e9c70dcf894d775ef3c40d8e4008056d05bae97363a51669cc9",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/renderer.js",
+    "target": "tools/todo/renderer.js",
+    "source_sha256": "e94f06e3e64dc91f3de1325046ceaa8aca31c106a4f0639bd9db8a4a099e62fb",
+    "target_sha256": "e94f06e3e64dc91f3de1325046ceaa8aca31c106a4f0639bd9db8a4a099e62fb",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/index.html",
+    "target": "tools/todo/index.html",
+    "source_sha256": "5c6db387f8658d504a0f287120ee3e3f7aeae81b5e843ad9be4e36064de6335b",
+    "target_sha256": "5c6db387f8658d504a0f287120ee3e3f7aeae81b5e843ad9be4e36064de6335b",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch05/preload.cjs",
+    "target": "tools/todo/preload.cjs",
+    "source_sha256": "7b1807d4229c5f2035ca1edc28d33c6ba6dd2c84ed34e3cc87d3801bc8f27b48",
+    "target_sha256": "7b1807d4229c5f2035ca1edc28d33c6ba6dd2c84ed34e3cc87d3801bc8f27b48",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/service.cjs",
+    "target": "tools/notes/service.cjs",
+    "source_sha256": "98ce46fd1a5ad664113328feed1f4472fc3d2584eea0c8215c35f67faa64ec36",
+    "target_sha256": "98ce46fd1a5ad664113328feed1f4472fc3d2584eea0c8215c35f67faa64ec36",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/styles.css",
+    "target": "tools/notes/styles.css",
+    "source_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "target_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/boundary.cjs",
+    "target": "tools/notes/boundary.cjs",
+    "source_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "target_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/core.cjs",
+    "target": "tools/notes/core.cjs",
+    "source_sha256": "3fdbf5633dd5d008e1dde8d777620bdeb868a6c69ae432a5b9707cdd57468f99",
+    "target_sha256": "3fdbf5633dd5d008e1dde8d777620bdeb868a6c69ae432a5b9707cdd57468f99",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/renderer.js",
+    "target": "tools/notes/renderer.js",
+    "source_sha256": "e656c736a601ab89516a0115a9d5be5d5c2e19ecd05cb807bc4d461e2cce6e5c",
+    "target_sha256": "e656c736a601ab89516a0115a9d5be5d5c2e19ecd05cb807bc4d461e2cce6e5c",
+    "modified": false,
+    "adaptation": "原樣同步 ch06 P1 修復版，包括 onClose/close callback。"
+  },
+  {
+    "source": "companion/ch06/index.html",
+    "target": "tools/notes/index.html",
+    "source_sha256": "cff5698d6e5caf67beeaed309e386af78eac573a95107eb694bf841aebd5bc33",
+    "target_sha256": "cff5698d6e5caf67beeaed309e386af78eac573a95107eb694bf841aebd5bc33",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch06/preload.cjs",
+    "target": "tools/notes/preload.cjs",
+    "source_sha256": "6a9157f808712bda664c394edc744d733c8a5cbf46c692c79725fdb781a4bfce",
+    "target_sha256": "41a1628f4f4f19e837c8cd2183447a718b37f5fa7f3556b807f2d10b1fca150c",
+    "modified": true,
+    "adaptation": "同步 ch06 API；onClose callback 完成後以 close-ready 回傳主程序 token，供整合全域退出協調。"
+  },
+  {
+    "source": "companion/ch07/service.cjs",
+    "target": "tools/organizer/service.cjs",
+    "source_sha256": "3916fe4fdf6e7ead81c63c50ed2ac763d879d9912b472825f233182ba04bf505",
+    "target_sha256": "3916fe4fdf6e7ead81c63c50ed2ac763d879d9912b472825f233182ba04bf505",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/styles.css",
+    "target": "tools/organizer/styles.css",
+    "source_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "target_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/boundary.cjs",
+    "target": "tools/organizer/boundary.cjs",
+    "source_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "target_sha256": "17ef89cf13ad8d798e7de39801c2ef6b34ae9c0a0f73804e54e52bbbea934be9",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/core.cjs",
+    "target": "tools/organizer/core.cjs",
+    "source_sha256": "75b9e5317ccd50f068dadb0cb22d7f2fe00de66cd10f6f6ea24e484b5150c323",
+    "target_sha256": "75b9e5317ccd50f068dadb0cb22d7f2fe00de66cd10f6f6ea24e484b5150c323",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/renderer.js",
+    "target": "tools/organizer/renderer.js",
+    "source_sha256": "385ab594e33e63f2a9ab38d57662ae5bccb9834a5c84589cff523f3f56e78777",
+    "target_sha256": "385ab594e33e63f2a9ab38d57662ae5bccb9834a5c84589cff523f3f56e78777",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/index.html",
+    "target": "tools/organizer/index.html",
+    "source_sha256": "16a415b8d4c75485be0103430035b45a7d3585f4764ee51ffb04a65edf1bc9f7",
+    "target_sha256": "16a415b8d4c75485be0103430035b45a7d3585f4764ee51ffb04a65edf1bc9f7",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch07/preload.cjs",
+    "target": "tools/organizer/preload.cjs",
+    "source_sha256": "197b2ad09ece894df34895f17aa45ebe6920dfc53ddcec6b469c9800c16f70c2",
+    "target_sha256": "197b2ad09ece894df34895f17aa45ebe6920dfc53ddcec6b469c9800c16f70c2",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/service.cjs",
+    "target": "tools/ledger/service.cjs",
+    "source_sha256": "2dc34b16e18183870c848da114218c6189f26069fd295ec0a6fbbfa72e285f80",
+    "target_sha256": "2dc34b16e18183870c848da114218c6189f26069fd295ec0a6fbbfa72e285f80",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/styles.css",
+    "target": "tools/ledger/styles.css",
+    "source_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "target_sha256": "3b2c237aa36778eeba01e84970b7a6e4b02a744f466bc7a8b1f4849a6d824998",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/boundary.cjs",
+    "target": "tools/ledger/boundary.cjs",
+    "source_sha256": "78aa81b2258b2ec85fd9c7db0d6e7ef3b849046dd01fb526c638911df9e1956a",
+    "target_sha256": "78aa81b2258b2ec85fd9c7db0d6e7ef3b849046dd01fb526c638911df9e1956a",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/store.cjs",
+    "target": "tools/ledger/store.cjs",
+    "source_sha256": "8abf7363262a02c136c3d9f34d266c8fdf364385d1a27307d5741258f4a9d3ba",
+    "target_sha256": "8abf7363262a02c136c3d9f34d266c8fdf364385d1a27307d5741258f4a9d3ba",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/core.cjs",
+    "target": "tools/ledger/core.cjs",
+    "source_sha256": "22ad2dc33cd698588120e40973a60227d7141ec662345e6fb0b60f671b6d423f",
+    "target_sha256": "22ad2dc33cd698588120e40973a60227d7141ec662345e6fb0b60f671b6d423f",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/renderer.js",
+    "target": "tools/ledger/renderer.js",
+    "source_sha256": "e4030fc32653d819f6304f93f718100f2c7b9beb9d83b3efce16c839fcc3211a",
+    "target_sha256": "e4030fc32653d819f6304f93f718100f2c7b9beb9d83b3efce16c839fcc3211a",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/index.html",
+    "target": "tools/ledger/index.html",
+    "source_sha256": "9dd6ecf265ef08f5500e5228cd79ba03394f652685793fa7c47a330e84674757",
+    "target_sha256": "9dd6ecf265ef08f5500e5228cd79ba03394f652685793fa7c47a330e84674757",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch08/preload.cjs",
+    "target": "tools/ledger/preload.cjs",
+    "source_sha256": "5c4a0e3df97427d7d7b7ad3d3157ce0660d27c2beaa181defa03ce62ba56b10e",
+    "target_sha256": "5c4a0e3df97427d7d7b7ad3d3157ce0660d27c2beaa181defa03ce62ba56b10e",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/weather.cjs",
+    "target": "tools/weather/weather.cjs",
+    "source_sha256": "7933f5469d3400b95248a3434d23d1ed64e7f528719a5f6267b64eb824dbd933",
+    "target_sha256": "7933f5469d3400b95248a3434d23d1ed64e7f528719a5f6267b64eb824dbd933",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/boundary.cjs",
+    "target": "tools/weather/boundary.cjs",
+    "source_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "target_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/store.cjs",
+    "target": "tools/weather/store.cjs",
+    "source_sha256": "f459e4b6d1eb738e0670081c520a80e92c85512ca9f49adb64eef61725a050da",
+    "target_sha256": "f459e4b6d1eb738e0670081c520a80e92c85512ca9f49adb64eef61725a050da",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/renderer.js",
+    "target": "tools/weather/renderer.js",
+    "source_sha256": "f9ca19b972b2982f1471474a8590a30f254ee772eea19458379e524a837477f1",
+    "target_sha256": "f9ca19b972b2982f1471474a8590a30f254ee772eea19458379e524a837477f1",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/index.html",
+    "target": "tools/weather/index.html",
+    "source_sha256": "66dad9f5b4a219777928286590cf77e736d50fba044a0e15f4d99dd425d66151",
+    "target_sha256": "66dad9f5b4a219777928286590cf77e736d50fba044a0e15f4d99dd425d66151",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/preload.cjs",
+    "target": "tools/weather/preload.cjs",
+    "source_sha256": "0f638b07b04058ddea3b4eb19a25cac0fb017303030d682182c78271b09aa4cf",
+    "target_sha256": "0f638b07b04058ddea3b4eb19a25cac0fb017303030d682182c78271b09aa4cf",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch09/src/style.css",
+    "target": "tools/weather/style.css",
+    "source_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "target_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/boundary.cjs",
+    "target": "tools/reminder/boundary.cjs",
+    "source_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "target_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/reminder.cjs",
+    "target": "tools/reminder/reminder.cjs",
+    "source_sha256": "fc0a06dea05f2bcb0f1cd629ae1cca84a3b8dfa9b3e8ae6d44eae0c2b6a82491",
+    "target_sha256": "fc0a06dea05f2bcb0f1cd629ae1cca84a3b8dfa9b3e8ae6d44eae0c2b6a82491",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/renderer.js",
+    "target": "tools/reminder/renderer.js",
+    "source_sha256": "a80498dec2d8af62d471e0587ddc50e1c8f2082fca8c95532e8a0c068c66ec2e",
+    "target_sha256": "a80498dec2d8af62d471e0587ddc50e1c8f2082fca8c95532e8a0c068c66ec2e",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/index.html",
+    "target": "tools/reminder/index.html",
+    "source_sha256": "8ed76e3ff031ca94d8485e1930b597347f5c4f5d07c68f8ed70f01c1439bc8db",
+    "target_sha256": "8ed76e3ff031ca94d8485e1930b597347f5c4f5d07c68f8ed70f01c1439bc8db",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/preload.cjs",
+    "target": "tools/reminder/preload.cjs",
+    "source_sha256": "4d8d171d2348b661ee85928af79b42bbff4a49ebbcacdef459ec964055aefc34",
+    "target_sha256": "4d8d171d2348b661ee85928af79b42bbff4a49ebbcacdef459ec964055aefc34",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch10/src/style.css",
+    "target": "tools/reminder/style.css",
+    "source_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "target_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/search-worker.cjs",
+    "target": "tools/search/search-worker.cjs",
+    "source_sha256": "690f960fe047c98f8072a2b032d7be532ac5cd998a681bc4f783c86a3b648c5a",
+    "target_sha256": "690f960fe047c98f8072a2b032d7be532ac5cd998a681bc4f783c86a3b648c5a",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/boundary.cjs",
+    "target": "tools/search/boundary.cjs",
+    "source_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "target_sha256": "2e3738a854ca82bdcf4f9340f6ac8bd7ad7823a086465fbc539af735c1d4fd1c",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/search.cjs",
+    "target": "tools/search/search.cjs",
+    "source_sha256": "c002ec9212ec90494d5a7d9ac2d0a30211d3a14626e1dda2e3112a666e35c77d",
+    "target_sha256": "c002ec9212ec90494d5a7d9ac2d0a30211d3a14626e1dda2e3112a666e35c77d",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/renderer.js",
+    "target": "tools/search/renderer.js",
+    "source_sha256": "d9006d86a10ac144bad56ab3d06ec062fb8c577b062a6db03971e1308c32e38c",
+    "target_sha256": "d9006d86a10ac144bad56ab3d06ec062fb8c577b062a6db03971e1308c32e38c",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/index.html",
+    "target": "tools/search/index.html",
+    "source_sha256": "d60e682445014d5803e41af1e99e5e2d542d69d732c4154da1b0607f5f399f79",
+    "target_sha256": "d60e682445014d5803e41af1e99e5e2d542d69d732c4154da1b0607f5f399f79",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/preload.cjs",
+    "target": "tools/search/preload.cjs",
+    "source_sha256": "555547096ddfa053bb380c79b6d227adae6df4fdf65e3dc6f211746955daf80b",
+    "target_sha256": "555547096ddfa053bb380c79b6d227adae6df4fdf65e3dc6f211746955daf80b",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/style.css",
+    "target": "tools/search/style.css",
+    "source_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "target_sha256": "58f78891fea8520da0e3d2f40026bde0971c833b7aadec72d13d23555c6b32f5",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch11/src/read-bounded.cjs",
+    "target": "tools/search/read-bounded.cjs",
+    "source_sha256": "e5e94d60e37f471d5f2223d2068a0ffdb12e5c8f8bf1130ba0013fe557ee8cd5",
+    "target_sha256": "e5e94d60e37f471d5f2223d2068a0ffdb12e5c8f8bf1130ba0013fe557ee8cd5",
+    "modified": false,
+    "adaptation": "原樣複用"
+  },
+  {
+    "source": "companion/ch04/test/timer.test.cjs",
+    "target": "regression/ch04/test/timer.test.cjs",
+    "source_sha256": "bc07aea66167bb1272141ca7f80594dbc1bd098a7b85beee76eeb8e669603bae",
+    "target_sha256": "1c9d8158173d10a9ce7796f469977347b1159d7496dac2ac3da1a8b450da958c",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch05/test/boundary.test.js",
+    "target": "regression/ch05/test/boundary.test.js",
+    "source_sha256": "5350b7fd3803f0ccb59dd712d7b05acf95ad208bbac63d292cdef187f1b1e255",
+    "target_sha256": "84a72b3e8a4450e446f5bbe7cb56ae388959be84da496e224e67be4e3d376ad2",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch05/test/core.test.js",
+    "target": "regression/ch05/test/core.test.js",
+    "source_sha256": "132c9200ccacbb51251446b701d261d01d420c8fcca6928213c225624276a7e9",
+    "target_sha256": "a650879a93b28084ed63f196300193e064f26d3258bff5453aee5bda45fb2b6e",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch05/test/service.test.js",
+    "target": "regression/ch05/test/service.test.js",
+    "source_sha256": "dc3edd09f5964d5aa90571204594484d7bb82c80ca4dcce8ceb809036fef62a1",
+    "target_sha256": "deffb34b9aa1d0eb50a07c41f8d98f6e7606ff979fa7c709c434a1c2a6b9b26f",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch06/test/boundary.test.js",
+    "target": "regression/ch06/test/boundary.test.js",
+    "source_sha256": "5350b7fd3803f0ccb59dd712d7b05acf95ad208bbac63d292cdef187f1b1e255",
+    "target_sha256": "2103a3e022a870da6d4b3e4d93b50996b3cee405f28c7ba26274ec0148757d85",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch06/test/core.test.js",
+    "target": "regression/ch06/test/core.test.js",
+    "source_sha256": "9d7d2caf6f5e4477220d33e9d23538367a24267f4cd83069fbfb8f9e62078700",
+    "target_sha256": "31939f3f01ba4af65c33cfccfe8dd52f1de3ef48c0d217405ce1d18fb9ff318f",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch06/test/renderer.test.js",
+    "target": "regression/ch06/test/renderer.test.js",
+    "source_sha256": "4826abea422df94d690b5867f6cc29836e94c3073100c9fcef7b4058ff7a5d36",
+    "target_sha256": "f54497d1e5d6dce246b09c34c7ae8e1e08e14f1a780b38c5ac6f2c2e9176161b",
+    "modified": true,
+    "adaptation": "完整保留 renderer 回歸與 bytes/TextEncoder 契約，只改 require 到 tools/notes。"
+  },
+  {
+    "source": "companion/ch06/test/service.test.js",
+    "target": "regression/ch06/test/service.test.js",
+    "source_sha256": "0b3c253908edf6478d1eac971b3c7b283cf3102529618f1222c8838ac593d298",
+    "target_sha256": "565dc7b355183a48a7e72609213b3cb6f82bbbb66ef4b79eb7f7afc71480e8f3",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch07/test/boundary.test.js",
+    "target": "regression/ch07/test/boundary.test.js",
+    "source_sha256": "5350b7fd3803f0ccb59dd712d7b05acf95ad208bbac63d292cdef187f1b1e255",
+    "target_sha256": "4aaa7e2e9b483d590d797427968668d6e9e9422c2a6ecdb4529dfbd5cdc872e4",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch07/test/core.test.js",
+    "target": "regression/ch07/test/core.test.js",
+    "source_sha256": "18533641f831607870212f9003ae69baf7c4402e58105ce99f3c56802a51ccef",
+    "target_sha256": "9b90b4e80066925862c4757d39132c3f218bdba8f382595cc8b2f47f383e9ff7",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch07/test/service.test.js",
+    "target": "regression/ch07/test/service.test.js",
+    "source_sha256": "9070e8faf39f2c83b850b501c8465e21c5f75bd7ccfe4311dbadba8cdae37e66",
+    "target_sha256": "19feafa7d195c22010ee1a15cba31f8ef7a30f370301a4b9db244e128c141f49",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch08/test/boundary.test.js",
+    "target": "regression/ch08/test/boundary.test.js",
+    "source_sha256": "5350b7fd3803f0ccb59dd712d7b05acf95ad208bbac63d292cdef187f1b1e255",
+    "target_sha256": "a62d5fb2859974db5147f2d668aad0d226f3e2738a3045b031c58a9b952e9388",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch08/test/core.test.js",
+    "target": "regression/ch08/test/core.test.js",
+    "source_sha256": "98d93fd31ca293caee12449c39bc21a8983943f877c987bf8d4a5de72e55d2d0",
+    "target_sha256": "da95b0fe23beb98d87243c9f258d74f30e7f583e30608b66d8a6de543d44ed7b",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch08/test/service.test.js",
+    "target": "regression/ch08/test/service.test.js",
+    "source_sha256": "880fe6a0fda1beb63bb8341830870b10ae539acbc2cb67ac2029b4247f16ac3e",
+    "target_sha256": "d6fc615cd616bc40a78de0268118a54782488565491c1bf5605ea91cb02a6f0a",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch08/test/store.test.js",
+    "target": "regression/ch08/test/store.test.js",
+    "source_sha256": "89277bb1c5f87977bb6fbbb3c47bf9c373257bbce6f7f229ff88b309a0f7adf7",
+    "target_sha256": "ba85d7b6c936cd8dd7108c39fa48c79980cb83100c84a01040e2ca1daef307bb",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch09/test/boundary.test.cjs",
+    "target": "regression/ch09/test/boundary.test.cjs",
+    "source_sha256": "0a1207bf6c21acc484cfecfea11d4b9799ad41eacdc918e6df9329d72a56ac2d",
+    "target_sha256": "53f6b5c25444bfffeb7cf311dcf31faa103efa55a7a02d82a08e6991737a1e16",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch09/test/core.test.cjs",
+    "target": "regression/ch09/test/core.test.cjs",
+    "source_sha256": "9b7329f5e759d7752094f8ffa7414b91b47c37c6d26ba1b4e666f17fcd3b27c3",
+    "target_sha256": "ad02878cb294e749ce6f28bdce12a5d30b53001c44c2110bcad7d2a04d43f0df",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch09/test/failures.test.cjs",
+    "target": "regression/ch09/test/failures.test.cjs",
+    "source_sha256": "d8636822971a1c5e166cfcd4d49223a87d45ba5223a6363bca21338acc7b4153",
+    "target_sha256": "7d226588606a35f456fe79cc46ce280429dc6d0aef06f190d86669146e8c2f05",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch09/test/store.test.cjs",
+    "target": "regression/ch09/test/store.test.cjs",
+    "source_sha256": "4e3e43ce5fe2515b6d7682d93553a5f167c66cd41dc7998b716c03594c992e2d",
+    "target_sha256": "0badbeef2c3c9ef833294a04263f8aece05340e296c178a96e86fa4a8e555963",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch10/test/boundary.test.cjs",
+    "target": "regression/ch10/test/boundary.test.cjs",
+    "source_sha256": "0a1207bf6c21acc484cfecfea11d4b9799ad41eacdc918e6df9329d72a56ac2d",
+    "target_sha256": "16af8058fbe824838ff41d32fd4fc18c95dacdc1073b6922608c9c2a625bb2fa",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch10/test/core.test.cjs",
+    "target": "regression/ch10/test/core.test.cjs",
+    "source_sha256": "f670a45dd550eb9acc1273e6313965349b765304c986e8c9f211b4127c40bd20",
+    "target_sha256": "7da33ab11ee84834b30e87cf770021d2e8a3067e2a48f1ee106bbccc0eb72ef9",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch10/test/failures.test.cjs",
+    "target": "regression/ch10/test/failures.test.cjs",
+    "source_sha256": "3fc7c92a192975d1e6de61e4c616639adf7414eec7b36abce36383f910ad5720",
+    "target_sha256": "7fa134ae23f54e43a091c44cd11db86860c25de70bc4553b313c141d1b4edb83",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch11/test/boundary.test.cjs",
+    "target": "regression/ch11/test/boundary.test.cjs",
+    "source_sha256": "0a1207bf6c21acc484cfecfea11d4b9799ad41eacdc918e6df9329d72a56ac2d",
+    "target_sha256": "0dee8f9a03031bb185ae615c9f90bc59c2defca805bcfa2a20e402f7e7c65970",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch11/test/core.test.cjs",
+    "target": "regression/ch11/test/core.test.cjs",
+    "source_sha256": "70d4b0ebe149cbc0422dc7ccf875e643cfb84e094426832c3f9441ed4ba02dc3",
+    "target_sha256": "0d513226c18cd6f69ba84d1871d83f7a9af94f5bdd7f4a1790f79bd5d0de0578",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch11/test/load.test.cjs",
+    "target": "regression/ch11/test/load.test.cjs",
+    "source_sha256": "040d267a8766e4ae21b6046e039a38b8f672c69c32bd02b789b613b04a9bff11",
+    "target_sha256": "b176ce48e8e1ad7271e56eec44ae8af199a5807272af5332242d710ab509cb9d",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch11/test/short-read.test.cjs",
+    "target": "regression/ch11/test/short-read.test.cjs",
+    "source_sha256": "40a91d5329f4ac1971fa7433a0543e4a2564f50081fbc7770d87fa7eae93a5e4",
+    "target_sha256": "45814a790fc09623f3123e2bfce3df8452655a212185d1220e9ec7453f7dc31d",
+    "modified": true,
+    "adaptation": "測試 require / worker fixture 路徑改為本整合 tools；原 standalone main 靜態測試不包含於整合回歸。"
+  },
+  {
+    "source": "companion/ch06/main.cjs",
+    "target": "main.cjs",
+    "adaptation": "移植 request-close/close 原生關閉協定到工具箱；增加 token close-ready，佇列外 flush、來源檢查及全域退出協調；非整檔直接複製。 保留 notes token 握手；整合錯誤表加入 CSV_LIMIT，不覆寫獨立 main。",
+    "source_sha256": "bfdb94086a4aea9215981de664448b94234c85c2d6524d29971b862de08e422b",
+    "target_sha256": "e7be0cd4366b0b8b5b9f218f9cd945775af2e3c04c66ac9a958e49437a626d9e",
+    "modified": true
+  },
+  {
+    "source": "companion/ch10/test/shortcut.test.cjs",
+    "target": "regression/ch10/test/shortcut.test.cjs",
+    "source_sha256": "f251755cc55493a57daadbc03e26b8172b3cfc9ab8feca75958242ceaffc6ceb",
+    "target_sha256": "4122b1c9e2852f17f03912da9ba7670e4b805f344ec1396fd57ff00054ca285f",
+    "modified": true,
+    "adaptation": "十五分鐘快捷按鈕回歸；只調整 source 根目錄至整合 tools/reminder。"
+  },
+  {
+    "source": "companion/ch11/test/known-notes.test.cjs",
+    "target": "regression/ch11/test/known-notes.test.cjs",
+    "source_sha256": "9189a5da100d32517799ea7bedc61a12c59afda0f1d994aa8f05119e5ace7e30",
+    "target_sha256": "3070e76a072bd4a46bbd9cc8ab70269e082efde0159e4d37d9f051374031b126",
+    "modified": true,
+    "adaptation": "三份已知筆記建構練習，只將 SearchJob require 路徑適配整合 tools。"
+  },
+  {
+    "source": "companion/ch04/test/reset-contract.test.cjs",
+    "target": "regression/ch04/test/reset-contract.test.cjs",
+    "source_sha256": "f3e12a9873d57f854616326c13b5003438d6129cebd0fb91f81fe93479ffbd1c",
+    "target_sha256": "d8e8ba72558e1c02ffe6c05231fbd857bc6ebe9c425d4fe5b19020129cb4cfe3",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch05/test/build.test.js",
+    "target": "regression/ch05/test/build.test.js",
+    "source_sha256": "98b80c1083149b5e9a7383f37115af0764e23feeaa69d56de92f708d0c6b6188",
+    "target_sha256": "53511fd49c6e9f630d823387fe66333d21093846cd99c03712c92ce439db73b6",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch06/test/build.test.js",
+    "target": "regression/ch06/test/build.test.js",
+    "source_sha256": "41d751d1d8409d5e1570ac51585079b4f33f05e2dcfad7278ada152adb03a8b1",
+    "target_sha256": "5c9c8aa8a0437c60ce7ef698e2e8366ff7bd2f5ce57ed89239c3a8a18ba84baf",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch07/test/build.test.js",
+    "target": "regression/ch07/test/build.test.js",
+    "source_sha256": "37bd46899140ca4091b3f28b15cd335891e5237277f2d5b7025b7a007576bdb7",
+    "target_sha256": "8b77a640e3a03edb21c8a09889b32314196338cf3e72f892a2035d84c174a778",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch08/test/build.test.js",
+    "target": "regression/ch08/test/build.test.js",
+    "source_sha256": "5fb98d6b291fd14e23843f8afe9b7ab95e2254eef5a124274ef211bda0ddbc4b",
+    "target_sha256": "2cb527bb2e75c07a05c38b50e86968f4c012433d0d97ada80c613c7e137aaa3b",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch09/test/build.test.cjs",
+    "target": "regression/ch09/test/build.test.cjs",
+    "source_sha256": "d4c72368663c70f829cd3cda2a2c6aa6f48aec509aad18aa2c25001fc6d3b287",
+    "target_sha256": "6a63a8ecf3cec77e523260675bd23fc60d64bddc531ea7a5b80a12672271ef32",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch07/partial-walkthrough.cjs",
+    "target": "regression/ch07/partial-walkthrough.cjs",
+    "source_sha256": "27b0c0ccd875aed59797abac3df5914cdf20e5265a2fe75b326f59e6352fff80",
+    "target_sha256": "da9cc47c5476fdb679ad66cba2b8f07845f7716bc80580cf6ad1c06064e3573a",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch07/test/partial.test.js",
+    "target": "regression/ch07/test/partial.test.js",
+    "source_sha256": "4a722460e110a807262df72b8c822a72bbf458dcf549211d58f42c2bf4a7cd91",
+    "target_sha256": "4a722460e110a807262df72b8c822a72bbf458dcf549211d58f42c2bf4a7cd91",
+    "modified": false,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch08/backup-walkthrough.cjs",
+    "target": "regression/ch08/backup-walkthrough.cjs",
+    "source_sha256": "4b5cc0feee5067ba4c4c9088a7bff778c935f5a1e86d6a652cd49bb20154ad9f",
+    "target_sha256": "b1c08ee6a0961f7d3cfb5dfe25ed9ab335a4e1034ecba3bb42cc43a6464c2362",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch08/test/backup.test.js",
+    "target": "regression/ch08/test/backup.test.js",
+    "source_sha256": "95eaa8e5fd3b59b229bc1cad7cbbaaf4796324b8d38be5941040a6ab56f69063",
+    "target_sha256": "95eaa8e5fd3b59b229bc1cad7cbbaaf4796324b8d38be5941040a6ab56f69063",
+    "modified": false,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch09/src/time.cjs",
+    "target": "tools/weather/time.cjs",
+    "source_sha256": "e194dd90fce66b78c32dfa0c6e597d246a613a570cfa731bc2db4fe26e0f1d45",
+    "target_sha256": "e194dd90fce66b78c32dfa0c6e597d246a613a570cfa731bc2db4fe26e0f1d45",
+    "modified": false,
+    "adaptation": "原樣複用；天氣 API 與快取共用日曆驗證"
+  },
+  {
+    "source": "companion/ch09/test/format.test.cjs",
+    "target": "regression/ch09/test/format.test.cjs",
+    "source_sha256": "0cb59b6d9547a5f2675a2f34ccb181e33d28bc0958cd9a924309337f7011be30",
+    "target_sha256": "ba2275d3862b16c997ecaec6acbd8c19c6eea216dc3eb0636664e42c98df6d8c",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  },
+  {
+    "source": "companion/ch08/test/exchange.test.js",
+    "target": "regression/ch08/test/exchange.test.js",
+    "source_sha256": "7734ca2f6f39090d2152ebefcd78956541d165df25db9da381aef4b634c5b3d7",
+    "target_sha256": "fd17180c7255da64096751f48d407e086b24149bddf51f0876c466c6021853c8",
+    "modified": true,
+    "adaptation": "保留來源行為斷言與故障復原；僅把模組路徑適配整合 tools，支援腳本留於 regression 不進執行包。"
+  }
+]
